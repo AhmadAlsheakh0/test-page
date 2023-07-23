@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Without Clearfix</h2>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+  <img class="img1" src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" alt="Pineapple" width="170" height="170">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias magnam quas architecto delectus nesciunt unde dolorum, iusto non maxime ea cumque, repellat necessitatibus facilis, vero illum id dignissimos facere?
+</div>
+
+<h2 style="clear:right">With Clearfix</h2>
+<p>Add the clearfix hack to the containing element, to fix this problem</p>
+
+<div class="clearfix">
+  <img class="img2" src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nesciunt ducimus corrupti fugiat dolorem eveniet non inventore facere velit expedita ea ullam incidunt blanditiis dignissimos illo possimus, laboriosam magni reiciendis.
+</div>
+
+</body>
+</html>

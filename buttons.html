@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buttons</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .large{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 600px;
+                height: 600px;
+                background-color: brown;
+            }
+            .small{
+                display: flex;
+                width: 400px;
+                height: 400px;
+                background-color: white;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-between;
+            }
+            .firstButton{
+                background-color: red;
+                width: 80px ;
+                height: 40px;
+                border: none;
+            }
+            .secondButton{
+                background-color: blue;
+                width: 80px ;
+                height: 40px;
+                border: none;
+            }
+            .thirdButton{
+                background-color: green;
+                width: 80px ;
+                height: 40px;
+                border: none;
+            }
+            .fourthButton{
+                
+                background-color: yellow;
+                width: 80px ;
+                height: 40px;
+                border: none;
+            }
+        .btn{
+            border-radius: 2px;
+        }
+
+        </style>
+        
+    </head>
+    <body>
+    <div class="large">
+        <div class="small">
+            <button class="firstButton btn"></button>
+            <button class="secondButton btn"></button>
+            <button class="thirdButton btn"></button>
+            <button class="fourthButton btn"></button>
+        </div>
+    </div>
+    </body>
+</html>

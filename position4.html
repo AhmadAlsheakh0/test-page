@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>position</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+
+           .one{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                width: 300px;
+                height: 200px;
+                transform: translate(-50%, -50%);
+                background-color: #f0f0f0;
+                padding: 20px;
+               }
+
+            .two{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 200px;
+                height: 100px;
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px;
+               }
+        </style>
+    </head>
+    <body>
+    <div class="one">
+        fixed
+        <div class="two">
+        absolute
+        </div>
+    </div>
+    </body>
+</html>
