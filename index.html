@@ -6,21 +6,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <style>
-            a{
-                display: block;
+        
+            body {
+                background-color: rgb(2, 3, 77);
+                border: solid white 1px;
+                height: 100%;
             }
+
+            h1 {
+                color: rgb(199, 199, 199);
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            .tasks {
+                width: 30%;
+                height: 500px;
+                background-color: rgba(152, 152, 152, 0.356);
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 95px;
+                border: solid white 1px;
+            }
+
+            .tasks a {
+                display: block;
+                font-size: 20px;
+                text-decoration: none;
+                color: white; 
+            }
+            
+            .tasks a:hover {
+                color: rgb(2, 3, 77);
+                background-color: white;
+                font-size: 25px;
+                transition: 0.3s;
+            }
+
         </style>
     </head>
     <body>
-     <h1>Hello, I am Ahmed Ibrahim</h1>
-     <p>My Tasks :</p>
-     <a href="circle.html">Circle task</a>
-     <a href="clear.html">clear task</a>
-     <a href="position1.html">position1 task</a>
-     <a href="position2.html">position2 task</a>
-     <a href="position3.html">position3 task</a>
-     <a href="position4.html">position4 task</a>
-     <a href="position5.html">position5 task</a>
-     <a href="buttons.html">buttons task</a>
+     <h1>Ahmed Ibrahim</h1>
+     <div class="tasks">
+         <a href="circle.html">Circle task</a>
+         <a href="clear.html">clear task</a>
+         <a href="position1.html">position1 task</a>
+         <a href="position2.html">position2 task</a>
+         <a href="position3.html">position3 task</a>
+         <a href="position4.html">position4 task</a>
+         <a href="position5.html">position5 task</a>
+         <a href="buttons.html">buttons task</a>
+         <a href="hello.html">JQuery task</a>
+     </div>
     </body>
 </html>
