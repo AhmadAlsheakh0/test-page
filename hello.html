@@ -15,69 +15,65 @@
         <nav>
                 <div class="container">
                     <div class="row">
-                        <img src="folio/7.png" style="margin-bottom: 70px;height: 35px;">
+                        <img id="folio7" src="folio/7.png">
                         <img src="folio/9.png" width="70%" height="400px">
-                        <div style="background-color: white; width: 30px;"></div>
-                        <button class="btn" id="btnnav"><i class="fa-solid fa-bars fa-lg"></i></button>
+                        <div id="empty"></div>
+                        <button class="btn-menu" id="btn-menu"><i class="fa-solid fa-bars fa-lg"></i></button>
                     </div>
                 </div>
 
-                <div class="boxx" id="boxnav">
+                <div class="boxx" id="slide-box">
                     <div class="container">
-                        <div class="wrap">
-                            <div></div>
-                            <img src="folio/9.png" style="background-color: rgb(45, 45, 45);">
-                            <button class="btn" id="xbtn"><i class="fa-solid fa-xmark"></i></button>
+
+                        <div class="box-header">
+                            <img id="folio9" src="folio/9.png">
+                            <button class="btn-cancel" id="btn-cancel"><i class="fa-solid fa-xmark"></i></button>
                         </div>
 
-                        <!--<div class="pic1"><img src="folio/3.png" height="40px" width="40px"></div>
-                        <div class="pic2"><img src="folio/4.png" height="40px" width="40px"></div>
-                        <div class="pic3"><img src="folio/6.png" height="40px" width="40px"></div> -->
+                        <div class="box-pic">
 
-                        <div class="pic">
+                            <img id="box-pic" src="folio/beckham.webp">
 
-                            <img src="folio/beckham.webp" height="200px" width="200px" id="image1">
-
-                            <div class="icon">
+                            <div class="box-icon">
                                 <i class="fa-solid fa-arrow-down-long fa-1x"></i>
                             </div>
 
-                            <div class="resume">
+                            <div class="box-resume">
                                 <p>DOWNLOAD <br>RESUME</p>
                             </div>
 
                         </div>
 
-                        <div class="content">
-                            <h1>Hello, i'm <span id="john">John</span> <span id="smith">Smith</span></h1>
-                            <p>nec ullamcorper augue sagittis. Proin faucibus lorem nisl, Donec commodo leo est,<br>
+                        <div class="box-main">
+                            <h1 id="box-main-title">Hello, i'm <span id="john">John</span> <span id="smith">Smith</span></h1>
+                            <p id="box-main-content">nec ullamcorper augue sagittis. Proin faucibus lorem nisl, Donec commodo leo est,<br>
                                 quis eleifend urna pellentesque eget.</p>
-                            <p id="p2">Proin scelerisque odio eu nisi viverra, nec ullamcorper gue <a href="#p2">contact me</a></p>    
+                            <p id="box-main-contact">Proin scelerisque odio eu nisi viverra, nec ullamcorper gue <a id="contact-link" href="#p2">contact me</a></p>    
                         </div>
 
-                        <div class="bar">
+                        <div class="box-bar">
                             <div class="photoshop">
-                                <h3>PHOTOSHOP</h3>
+                                <h3 class="bar-title">PHOTOSHOP</h3>
                                 <div class="bar1">
                                     <div class="slide1"></div>
                                 </div>
-                                <p>98%</p>
+                                <p class="bar-rate">98%</p>
                             </div>
 
                             <div class="illustrator">
-                                <h3>ILLUSTRATOR</h3>
+                                <h3 class="bar-title">ILLUSTRATOR</h3>
                                 <div class="bar2">
                                     <div class="slide2"></div>
                                 </div>
-                                <p>70%</p>
+                                <p class="bar-rate">70%</p>
                             </div>
 
                             <div class="css">
-                                <h3>HTML/CSS</h3>
+                                <h3 class="bar-title">HTML/CSS</h3>
                                 <div class="bar3">
                                     <div class="slide3"></div>
                                 </div>
-                                <p>60%</p>
+                                <p class="bar-rate">60%</p>
                             </div>
                         </div>
                     </div>
@@ -85,24 +81,24 @@
                     <div class="hline"></div>
 
                     <div class="container">
-                        <div class="year">
+                        <div class="box-footer">
                             <div class="designer">
-                                <h2>2000 - 2008</h2>
-                                <p>Jr.Graphic Designer <span class="spanline"> | </span> <span class="spantext">ABC Inc.</span></p>
+                                <h2 class="year">2000 - 2008</h2>
+                                <p class="topic">Jr.Graphic Designer <span id="spanline"> | </span> <span id="spantext">ABC Inc.</span></p>
                             </div>
 
                             <div class="vline"></div>
 
                             <div class="specialist">
-                                <h2>2008 - 2010</h2>
-                                <p>Graphic Specialist <span class="spanline"> | </span> <span class="spantext">GRAPHICSTUDIO</span></p>
+                                <h2 class="year">2008 - 2010</h2>
+                                <p class="topic">Graphic Specialist <span id="spanline"> | </span> <span id="spantext">GRAPHICSTUDIO</span></p>
                             </div>
 
                             <div class="vline"></div>
 
                             <div class="director">
-                                <h2>2010 - Present</h2>
-                                <p>Creative Director<span class="spanline"> | </span> <span class="spantext">DESIGN ARTS</span></p>
+                                <h2 class="year">2010 - Present</h2>
+                                <p class="topic">Creative Director<span id="spanline"> | </span> <span id="spantext">DESIGN ARTS</span></p>
                             </div>
                         </div>
                     </div>
@@ -111,64 +107,58 @@
 
         <header>
             <div class="container">
-                <h1>Hello,</h1>
-                <div class="in">
-                    <p>
-                        Donec commodo leo est. quis eleifend urna pellentesque eget. Proin scelerisque odio eu<br>
-                        nisi viverra, nec ullamcorper augue sagittis. Proin faucibus lorem nisl.
-                    </p>
-                    <img src="folio/3.png" height="50px">
+                <div class="hello">
+                    <h1 id="hello-title">Hello,</h1>
+                    <div class="hello-content">
+                        <p>
+                            Donec commodo leo est. quis eleifend urna pellentesque eget. Proin scelerisque odio eu<br>
+                            nisi viverra, nec ullamcorper augue sagittis. Proin faucibus lorem nisl.
+                        </p>
+                        <img id="folio3" src="folio/3.png">
+                    </div>
                 </div>
-            </div>
+            </div> 
         </header>
 
         <main>
-            <div class="large">
+            <div class="pictures">
 
-                <div class="img1"><img src="folio/6.png" width="30px"></div>
+                <img id="folio6" src="folio/6.png">
                 <div class="container new">
                     <div class="box one"></div>
                     <div class="box two"></div>
                     <div class="box three"></div>
                     <div class="box four"></div>
                 </div>
-                <div class="img2"><img src="folio/4.png" width="50px"></div>
-                <div class="img3"><img src="folio/5.png" width="50px"></div>
+                <img id="folio4" src="folio/4.png">
+                <img id="folio5" src="folio/5.png">
                 
             </div>
         </main>
 
         <footer>
-            <div class="all">
-                <div class="inside">
-                    <h3>LOADING</h3>
-                    <img src="folio/8.png">
-                    <h2>1.800.123.456</h2>
-                    <p>Donec commodo leo est. quis eleifend urna pellentesque eget. Proin scelerisque odio eu nisi viverra,<br>
+            <div class="page-footer">
+
+                <div class="footer-content">
+                    <h3 id="loading">LOADING</h3>
+                    <img id="folio8" src="folio/8.png">
+                    <h2 id="number">1.800.123.456</h2>
+                    <p id="email">Donec commodo leo est. quis eleifend urna pellentesque eget. Proin scelerisque odio eu nisi viverra,<br>
                          nec ullamcorper augue sagittis. Proin faucibus lor or <a href="mailto:contactme@mysite.com">contactme@mysite.com</a></p>
-                    <ul>
+                    <ul class="contact">
                         <li>FACEBOOK</li>
-                        <li style="color: rgb(205, 205, 205);">|</li>
+                        <li class="contact-border">|</li>
                         <li>TWITTER</li>
-                        <li style="color: rgb(207, 207, 207);">|</li>
+                        <li class="contact-border">|</li>
                         <li>DRIBBBLE</li>
                     </ul>
-                    <div class="lastline">
+                    <div class="footer-line">
                     </div>    
                 </div>
+
             </div>
         </footer>
 
-        <script>
-            $(document).ready(function(){
-                $("#btnnav").click(function(){
-                    $("#boxnav").slideDown("slow");
-                });
-
-                $("#xbtn").click(function(){
-                    $("#boxnav").slideUp();
-                });
-            });
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>

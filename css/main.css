@@ -9,6 +9,30 @@
     width: 50%;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#folio7 {
+    margin-bottom: 70px;
+    height: 35px;
+}
+
+#empty {
+    background-color: white;
+    width: 30px;
+}
+
+.btn-menu {
+    margin-bottom: 70px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
 .boxx {
     background-color: #26262b;
     width:100%;
@@ -19,19 +43,20 @@
     display: none;
 }
 
-.wrap {
+.box-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.boxx img {
+#folio9 {
+    margin: auto;
     width: 70%;
     height: 300px;
     background-color: rgb(48, 48, 48);
 }
 
-.wrap button {
+.btn-cancel {
     color: white;
     margin-bottom: 70px;
     background-color: #26262b;
@@ -41,7 +66,7 @@
     height: 20px;
 }
 
-.pic {
+.box-pic {
     position: relative;
     margin-top: -160px;
     display: flex;
@@ -49,13 +74,13 @@
     justify-content: center;
 }
 
-#image1 {
+#box-pic {
     border-radius: 50%;
     height: 180px;
     width: 180px;
 }
 
-.icon {
+.box-icon {
     position: absolute;
     left: 435px;
     top: 50px;
@@ -66,46 +91,23 @@
     width: 30px;
     background-color: rgb(243, 52, 52);
     border-radius: 50%;
-}
-
-.icon i {
     color: white;
 }
 
-.pic1 {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 100px;
-}
-
-.pic2 {
-    position: absolute;
-    width: 40px;
-    height: 10px;
-}
-
-.pic3 {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-}
-
-.resume {
+.box-resume {
     position: absolute;
     left: 470px;
-    top: 50px;
-}
-
-.resume p {
-    color: white;
+    top: 50px;color: white;
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.content h1 {
+.box-main {
+    font-family: 'Montserrat', sans-serif; 
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+}
+
+#box-main-title {
     margin-top: 50px;
     font-size: 40px;
     color: rgb(156, 156, 156);
@@ -121,43 +123,34 @@
     font-weight: 900;
 }
 
-.content p {
+#box-main-content {
     padding: 10px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
     color: rgb(156, 156, 156);
 }
 
-.content #p2 {
+#box-main-contact {
     margin-top: 25px;
-    font-family: 'Montserrat', sans-serif;
     color: rgb(105, 104, 104);
 }
 
-.content a {
+#contact-link {
     color: aqua;
 }
 
-.bar {
+.box-bar {
     margin-top: 80px;
     display: flex;
     justify-content: space-around;
 }
 
-.photoshop {
-    width: 220px;
-}
-
-.illustrator {
-    width: 220px;
-}
-
+.photoshop,
+.illustrator,
 .css {
     width: 220px;
 }
 
-.bar h3,
-.bar p {
+.bar-title,
+.bar-rate {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 15px;
@@ -166,20 +159,8 @@
     text-align: center;
 }
 
-.bar1 {
-    width: 200px;
-    height: 5px;
-    margin: auto;
-    background-color: rgb(0, 0, 0);
-}
-
-.bar2 {
-    width: 200px;
-    height: 5px;
-    margin: auto;
-    background-color: rgb(0, 0, 0);
-}
-
+.bar1,
+.bar2,
 .bar3 {
     width: 200px;
     height: 5px;
@@ -211,75 +192,40 @@
     margin-top: 30px;
 }
 
-.year {
+.box-footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 150px;
 }
 
-.designer {
-    width: 28%;
-    color: #f0fcf9;
-}
-
-.specialist {
-    width: 28%;
-    color: #f0fcf9;
-}
-
+.designer,
+.specialist,
 .director {
     width: 28%;
     color: #f0fcf9;
 }
 
-.designer h2 {
+.year {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     text-align: center;
 }
 
-.specialist h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    text-align: center;
-}
-
-.director h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    text-align: center;
-}
-
-.designer p {
+.topic {
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     text-align: center;
     padding-top: 4px;
 }
 
-.specialist p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-align: center;
-    padding-top: 4px;
-}
-
-.director p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-align: center;
-    padding-top: 4px;
-}
-
-.spanline {
+#spanline {
     color: rgb(137, 137, 137);
 }
 
-.spantext {
+#spantext {
     color: aqua;
 }
-
 
 .vline {
     width: 1px;
@@ -287,29 +233,18 @@
     background-color: rgb(91, 91, 91);
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-.btn {
-    margin-bottom: 70px;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    cursor: pointer;
-}
-
-h1 {
-    position: relative;
-    z-index: 1;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 150px;
-    color: rgb(67, 67, 67);
+.hello{
     margin-top: -110px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 
-.in {
+#hello-title {
+    font-size: 150px;
+    color: rgb(67, 67, 67);   
+}
+
+.hello-content {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -317,9 +252,14 @@ h1 {
     width: 75%;
 }
 
-.in p {
-    font-size: 14px;
+.hello-content p {
+    font-size: 10px;
     color: rgb(160, 159, 159);
+    line-height: 20px;
+}
+
+#folio3 {
+    height: 45px;
 }
 
 .new {
@@ -348,25 +288,28 @@ h1 {
     background-color: rgb(254, 189, 254);
 }
 
-.img1 {
+#folio6{
     position: absolute;
     top: 1000px;
     left: 230px;
+    width: 30px
 }
 
-.img2 {
+#folio4 {
     position: absolute;
     top: 660px;
     right: 340px;
+    width: 50px
 }
 
-.img3 {
+#folio5 {
     position: absolute;
     top: 1150px;
     right: 340px;
+    width: 50px
 }
 
-.all {
+.page-footer {
     background-color: #f0fcf9;
     position: relative;
     z-index: -1;
@@ -374,7 +317,7 @@ h1 {
     height: 780px;
 }
 
-.inside {
+.footer-content {
     position: relative;
     margin: auto;
     top: 60px;
@@ -382,19 +325,19 @@ h1 {
     text-align: center;
 }
 
-.inside h3{
+#loading {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.8em;
     font-size: 13px;
     font-weight: 800;
 }
 
-.inside img {
+#folio8 {
     height: 200px;
     margin-top: 60px;
 }
 
-.inside h2 {
+#number {
     font-family: 'Montserrat', sans-serif;
     color: rgb(77, 77, 77);
     font-weight: 700;
@@ -402,25 +345,25 @@ h1 {
     margin-top: 50px;
 }
 
-.inside p {
+#email {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     color: rgb(183, 183, 183);
     margin-top: 20px;
 }
 
-.inside a {
+.footer-content a {
     text-decoration: none;
     color: rgb(0, 240, 240);
     cursor: pointer;
 }
 
-.inside ul {
+.contact {
     list-style: none;
     margin-top: 40px;
 }
 
-.inside li {
+.contact li {
     display: inline;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -429,7 +372,11 @@ h1 {
     color: rgb(77, 77, 77);
 }
 
-.lastline {
+.contact-border {
+    color: #bfbfbf;
+}
+
+.footer-line {
     width: 1px;
     height: 50px;
     background-color: rgb(35, 35, 35);
